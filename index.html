@@ -6,7 +6,10 @@
 
   <title>Stop AI Hate</title>
 
-  <meta name="description" content="You liked it before you knew. Apparel and stickers for creators who use AI, still care about craft, and are tired of the purity test." />
+  <meta
+    name="description"
+    content="You liked it before you knew. Apparel and stickers for creators who use AI, still care about craft, and are tired of the purity test."
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,7 +17,7 @@
 <body>
   <main class="page">
     <section class="hero">
-      <p class="eyebrow">STOP AI HATE</p>
+      <p class="eyebrow">DROP 001 IS COMING</p>
 
       <h1>You liked it before you knew.</h1>
 
@@ -24,12 +27,16 @@
       </p>
 
       <div class="cta-row">
-        <a class="button primary" href="#drop">View Drop 001</a>
-        <a class="button secondary" href="#manifesto">Read the manifesto</a>
+        <a class="button primary" href="#interest">Join the Drop 001 list</a>
+        <a class="button secondary" href="#drop">View Drop 001</a>
       </div>
+
+      <p class="hero-note">
+        First 15 Drop 001 signups get a free sticker when the launch goes live.
+      </p>
     </section>
 
-    <section id="manifesto" class="section">
+    <section id="manifesto" class="section manifesto">
       <h2>The manifesto</h2>
 
       <p>
@@ -49,49 +56,188 @@
     </section>
 
     <section id="drop" class="section products">
-      <h2>Drop 001</h2>
+      <div class="section-heading">
+        <p class="eyebrow">THE FIRST RELEASE</p>
+        <h2>Drop 001</h2>
+        <p>
+          The first drop is built around two launch pieces: one flagship tee and
+          one sticker for creators tired of explaining their workflow.
+        </p>
+      </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="mockup">
-            <span>You liked it<br />before you knew.</span>
+      <div class="product-grid featured-products">
+        <article class="product-card product-card-large">
+          <div class="product-image-wrap">
+            <img
+              src="images/tshirt-card.png"
+              alt="Stop AI Hate shirt mockup with the phrase You liked it before you knew."
+              class="product-image"
+            />
           </div>
-          <h3>Statement Tee</h3>
-          <p>Front: Stop AI Hate. Back: You liked it before you knew.</p>
+
+          <div class="product-copy">
+            <p class="product-kicker">Flagship Tee</p>
+            <h3>You liked it before you knew.</h3>
+            <p>
+              Front print shown. Back branding planned with
+              <strong>Stop AI Hate.</strong>
+            </p>
+          </div>
         </article>
 
-        <article class="product-card">
-          <div class="mockup">
-            <span>AI-Assisted<br />Human-Directed</span>
+        <article class="product-card product-card-large">
+          <div class="product-image-wrap">
+            <img
+              src="images/sticker-card.png"
+              alt="Stop AI Hate sticker mockup with the phrase The purity test is exhausting."
+              class="product-image"
+            />
           </div>
-          <h3>Creator Sticker</h3>
-          <p>A clean badge for people who are done pretending.</p>
-        </article>
 
-        <article class="product-card">
-          <div class="mockup">
-            <span>I used AI<br />and still had<br />to work.</span>
+          <div class="product-copy">
+            <p class="product-kicker">Launch Sticker</p>
+            <h3>The purity test is exhausting.</h3>
+            <p>
+              Included free with Drop 001 shirt orders while supplies last.
+              First 15 interest-list signups get one reserved.
+            </p>
           </div>
-          <h3>Workflow Tee</h3>
-          <p>For anyone who knows the tool does not finish the project.</p>
         </article>
       </div>
     </section>
 
-    <section class="section email">
-      <h2>Coming soon</h2>
-      <p>
-        Drop 001 is being built now. Follow the launch and claim first access.
-      </p>
+    <section id="interest" class="section interest">
+      <div class="interest-card">
+        <div class="interest-copy">
+          <p class="eyebrow">NO PREORDER YET</p>
+          <h2>Join the Drop 001 interest list</h2>
 
-      <a class="button primary" href="mailto:hello@stopaihate.com?subject=Stop AI Hate Launch List">
-        Join the launch list
-      </a>
+          <p>
+            This is not a preorder. No payment is collected here.
+            Join the list to get one launch email when the shop opens.
+          </p>
+
+          <p>
+            The first 15 signups get a free launch sticker when Drop 001 goes live.
+          </p>
+        </div>
+
+        <form
+          class="interest-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+
+          <label>
+            Preferred shirt size
+            <select name="shirt_size" required>
+              <option value="">Select a size</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+              <option value="XL">XL</option>
+              <option value="2XL">2XL</option>
+              <option value="3XL">3XL</option>
+              <option value="Other">Other / unsure</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred shirt color
+            <select name="shirt_color" required>
+              <option value="">Select a color</option>
+              <option value="Blue / teal">Blue / teal</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Gray">Gray</option>
+              <option value="Other">Other / unsure</option>
+            </select>
+          </label>
+
+          <label>
+            Interested in
+            <select name="interest_type" required>
+              <option value="">Select one</option>
+              <option value="Tee + sticker">Tee + sticker</option>
+              <option value="Sticker only">Sticker only</option>
+              <option value="Just following the project">Just following the project</option>
+            </select>
+          </label>
+
+          <label>
+            What slogan should come next?
+            <textarea
+              name="next_slogan"
+              rows="4"
+              placeholder="Optional: tell us what slogan you want on Drop 002 or Drop 003."
+            ></textarea>
+          </label>
+
+          <button class="button primary form-button" type="submit">
+            Join the list
+          </button>
+
+          <p class="form-note">
+            One launch email. No spam. No payment collected.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section slogan-teasers">
+      <div class="section-heading">
+        <p class="eyebrow">UNDER REVIEW</p>
+        <h2>More slogans coming</h2>
+        <p>
+          Drop 001 starts with the flagship tee and launch sticker.
+          Future drops may include sharper workflow, disclosure, and creator-process designs.
+        </p>
+      </div>
+
+      <div class="slogan-grid">
+        <article class="slogan-card">
+          <p>This text was AI generated.</p>
+        </article>
+
+        <article class="slogan-card">
+          <p>Please provide the full script.</p>
+        </article>
+
+        <article class="slogan-card">
+          <p>My process is not a confession.</p>
+        </article>
+
+        <article class="slogan-card">
+          <p>AI-assisted. Human-directed.</p>
+        </article>
+
+        <article class="slogan-card">
+          <p>The tool did not make the taste.</p>
+        </article>
+
+        <article class="slogan-card">
+          <p>I used AI and still had to work.</p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Stop AI Hate. AI-assisted. Human-directed.</p>
+
+    <p class="disclaimer">
+      Stop AI Hate is an independent creator-run project and is not affiliated
+      with, endorsed by, or sponsored by any AI company.
+    </p>
   </footer>
 </body>
 </html>
