@@ -41,7 +41,15 @@ a {
   z-index: 5;
 }
 
-.wordmark,
+.wordmark {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
 .footer-wordmark {
   text-decoration: none;
   color: var(--text);
@@ -173,7 +181,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.manifesto p {
+.mission p {
   margin-top: 0;
 }
 
@@ -386,6 +394,10 @@ footer p {
 }
 
 @media (max-width: 520px) {
+  .wordmark {
+    font-size: 1.55rem;
+  }
+
   .site-nav {
     gap: 12px;
   }
